@@ -1,16 +1,16 @@
+// @flow
 import "babel-polyfill";
 import React from "react";
-import Box from "mineral-ui/Box";
 import { ThemeProvider } from "mineral-ui/themes";
-
+import Header from "./components/Header";
+import SideNav from "./components/SideNav";
+import MainContent from "./components/MainContent";
 const App = () => (
   <ThemeProvider>
     <>
-      <Box>Header</Box>
-      <Box inline width={1 / 3}>
-        Sidebar
-      </Box>
-      <Box inline>Content</Box>
+      <Header />
+      <SideNav />
+      <MainContent />
     </>
   </ThemeProvider>
 );
